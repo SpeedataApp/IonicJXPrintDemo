@@ -1,5 +1,7 @@
 {
   "name": "ionicJxPrint",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

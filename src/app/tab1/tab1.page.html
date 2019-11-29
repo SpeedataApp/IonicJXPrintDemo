@@ -8,34 +8,20 @@
 
 <ion-content>
     <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-title>JXPrint test</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+    <ion-button style="width:100px;height:50px" (click)="connectPrinter()">连接打印机</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="closeConnect()">断开连接</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="setPaperType()">设置纸类型</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="setDensity()">设置浓度</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="printSelfCheck()">打印自检页</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="printText()">打印文本</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="printBarCode()">打印条码</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="printImage()">打印图片</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="printTable()">打印表格</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="setPaperFeed()">走纸</ion-button>
+    <ion-button style="width:100px;height:50px" (click)="setPaperBack()">退纸</ion-button>
+    
 </ion-content>
